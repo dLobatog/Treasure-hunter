@@ -1,6 +1,7 @@
 require 'sinatra'
 
-set :views, 'views/'
+set :public, 'public'
+set :views,  'views'
 
 get '/' do
   erb :index
