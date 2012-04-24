@@ -1,5 +1,7 @@
 require 'sinatra'
 
+set :views, 'views/'
+
 get '/' do
-  "Hello World #{params[:name]}".strip
+  erb :index
 end
