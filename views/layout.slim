@@ -1,0 +1,62 @@
+doctype html
+html  
+  head
+    title Treasure Hunter
+    meta name='amazon products treasure hunter' 
+    link rel='stylesheet' href='/css/reset.css'  
+    link rel='stylesheet' href='/css/jquery.vegas.css'  
+    link rel='stylesheet' href='/css/layout.css'  
+    script src='/js/jquery.min.js'   
+    script src='/js/jquery.vegas.js'   
+    script 
+      | var _gaq = _gaq || [];
+      |  _gaq.push(['_setAccount', 'UA-33217865-1']);
+      |  _gaq.push(['_trackPageview']);
+      |  (function() {
+      |  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      |  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      |  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      |  })();
+    script
+      | $(function(){$('#query').change(function () {
+          $('#searchForm').attr('action', '/product/' + $('#query').val());
+        })});
+      
+  body
+    #top-bar 
+      #searchbox 
+        form id='searchForm' action='/product/' method='get'
+          input type='text' style='color:white' id='query' value='Treasure Hunter'
+          label type='submit' for='search'
+      #categories
+        #superheader
+          a href='/topsellers/1000' style='text-decoration:none; color:white;'
+            h6 Books
+        #superheader
+          a href='/topsellers/493964' style='text-decoration:none; color:white;'
+            h6 Electronics
+        #superheader
+          a href='/topsellers/1036592' style='text-decoration:none; color:white;'
+            h6 Apparel
+        #superheader
+          a href='/topsellers/11055981' style='text-decoration:none; color:white;'
+            h6 Beauty
+        #superheader
+          a href='/topsellers/1063498' style='text-decoration:none; color:white;'
+            h6 Home
+        #superheader
+          a href='/topsellers/3375301' style='text-decoration:none; color:white;'
+            h6 Sports
+    #wrapper 
+      == yield
+      #left-arrow.arrow
+        .arrow-background-wrapper
+          .arrow-background.left-arrow-background
+      #right-arrow.arrow
+        .arrow-background-wrapper
+          .arrow-background.right-arrow-background
+    #footer
+      a href='http://www.daniellobato.me' style='display:block; position:absolute; bottom:0px; right:0px;text-decoration:none; color:white;' 
+        span style='font-size:10px;' Made by Daniel Lobato 
+      a href='/help' style='display:block; position:absolute; bottom:0px; left:0px;text-decoration:none; color:white;' 
+        span style='font-size:20px;' WTF IS THIS?

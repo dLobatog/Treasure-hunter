@@ -1,0 +1,216 @@
+#right-arrow {
+	float: right;
+	right: 0px;
+}
+#right-arrow .arrow-background {
+	right: 0px;
+	background-image: url("/images/arrow-right.png");
+}
+
+#left-arrow {
+	left: 0px;
+}
+#left-arrow .arrow-background {
+	left: 0px;
+	background-image: url("/images/arrow-left.png");
+}              
+
+.arrow {
+	cursor: pointer;
+	position: absolute;
+	margin-top: -25px;
+	z-index: 1;
+	top: 0px;
+	height: 100%;
+	width: 50px;
+}
+.arrow:active, .arrow:visited {
+	border: none;
+}
+.arrow .arrow-background-wrapper {
+	position: absolute;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	float: right;
+}
+.arrow .arrow-background-wrapper .arrow-background {
+	position: absolute;
+	width: 30px;
+	height: 67px;
+top: 50%}
+.arrow .text-image {
+	position: absolute;
+	top: 50%;
+	margin-top: 22px;
+}
+.arrow:hover .arrow-background {
+	background-position: 0px -67px;
+}   
+
+#top-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: url(/images/topbar.png);
+	background: rgba(0, 0, 0, 0.5) url();
+	padding: 5px 50px 5px 5px;	
+	width: 99%;
+	text-align: right;
+}
+#top-bar h4 {
+	margin: 0;	
+}
+
+#categories {
+	float: right;
+}
+
+#superheader {
+	text-align         : left;
+	text-transform     : none;
+	z-index            : 999;
+	font               : 11px/1.6 Arial, sans-serif;
+	margin-left        : 20px;
+	margin-right       : 20px;
+	padding-left       : 20px;
+	padding-right      : 20px;
+	display            : block;
+	float              : left;
+	top                : 0px;
+	left               : 20px;
+	background         : #000;
+	background         : rgba(0, 0, 0, 0.8);
+	color              : #FFF;
+	-webkit-box-shadow : 0px 2px 5px #000;
+	-moz-box-shadow    : 0px 2px 5px #000;
+}
+
+#superheader * {
+	margin: 0;
+	padding: 0;
+}
+#superheader h6 {
+	color: #FFF;
+	font: bold 11px Arial, sans-serif;
+	padding: 8px 10px;
+	cursor: pointer;
+}
+
+h1 {
+	font-size:68px;
+	letter-spacing:-2px;	
+	line-height:60px;
+	margin:25px 0;
+	text-shadow:0 3px 3px #000;
+}
+
+#productinfo {
+	float: right;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	margin: 20px;
+}
+
+span {
+	font-size:30px;
+	border:1px solid #111;
+	background:url(../images/alpha.png);
+	background:rgba(0, 0, 0, 0.8) url();
+	padding:0 15px;
+	text-align: -webkit-match-parent;
+}
+
+#searchbox {
+	float: left;
+	padding-left: 30px;
+}
+
+#search {
+	color: white;
+}
+
+body {
+	background: #222;
+	margin: 0;
+	padding: 0;
+}
+
+input {
+	background: transparent;
+	background: rgba(163, 135, 106, 0.15);
+	background-clip: padding-box;
+
+	border: none;
+	border-radius:         26px;
+	-moz-border-radius:    26px;
+	-o-border-radius:      26px;
+	-webkit-border-radius: 26px;
+
+	box-shadow:         inset 0 0 5px rgba(0, 0, 0, 0.1), 
+	0 1px 0 rgba(255, 255, 255, 0.5), 
+	inset 0 1px 2px rgba(0, 0, 0, 0.3), 
+	0 0 40px rgba(255, 255, 255, 0.3);
+	-moz-box-shadow:    inset 0 0 5px rgba(0, 0, 0, 0.1), 
+	0 1px 0 rgba(255, 255, 255, 0.5), 
+	inset 0 1px 2px rgba(0, 0, 0, 0.3), 
+	0 0 40px rgba(255, 255, 255, 0.3);
+	-o-box-shadow:      inset 0 0 5px rgba(0, 0, 0, 0.1), 
+	0 1px 0 rgba(255, 255, 255, 0.5), 
+	inset 0 1px 2px rgba(0, 0, 0, 0.3), 
+	0 0 40px rgba(255, 255, 255, 0.3);
+	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1), 
+	0 1px 0 rgba(255, 255, 255, 0.5), 
+	inset 0 1px 2px rgba(0, 0, 0, 0.3), 
+	0 0 40px rgba(255, 255, 255, 0.3);
+
+	color: #333;
+	height: 26px;
+	margin: 0 80px 0 80px;
+	outline: none;
+	font: 20px 'PT Sans Narrow', sans-serif;
+	padding: 0 20px 0 35px;
+
+	transition:         all .1s linear;
+	-moz-transition:    all .1s linear;
+	-o-transition:      all .1s linear;
+	-webkit-transition: all .1s linear;
+
+	width: 185px;
+}
+
+input:focus {
+	background: transparent;
+	background: rgba(163, 135, 106, 0.2);
+
+	box-shadow:         inset 0 0 5px rgba(0, 0, 0, 0.2), 
+	0 1px 0 rgba(255, 255, 255, 0.7), 
+	inset 0 1px 2px rgba(0, 0, 0, 0.4), 
+	0 0 40px rgba(255, 255, 255, 0.5);
+	-moz-box-shadow:    inset 0 0 5px rgba(0, 0, 0, 0.2), 
+	0 1px 0 rgba(255, 255, 255, 0.7), 
+	inset 0 1px 2px rgba(0, 0, 0, 0.4), 
+	0 0 40px rgba(255, 255, 255, 0.5);
+	-o-box-shadow:      inset 0 0 5px rgba(0, 0, 0, 0.2), 
+	0 1px 0 rgba(255, 255, 255, 0.7), 
+	inset 0 1px 2px rgba(0, 0, 0, 0.4), 
+	0 0 40px rgba(255, 255, 255, 0.5);
+	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2), 
+	0 1px 0 rgba(255, 255, 255, 0.7), 
+	inset 0 1px 2px rgba(0, 0, 0, 0.4), 
+	0 0 40px rgba(255, 255, 255, 0.5);
+}
+
+label {
+	background: transparent url(http://f.cl.ly/items/2a2Z0V0L0J1p3V082d3r/icon-search.png) no-repeat top left;
+	cursor: pointer;
+	display: block;
+	height: 17px;
+	left: 90px;
+	position: relative;
+	text-indent: -99999px;
+	top: -21px;
+	width: 16px;
+}
+

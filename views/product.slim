@@ -1,0 +1,25 @@
+script src='/js/cycle_products.js'   
+script
+  == "backgrounds    = #{@backgrounds.to_json};"
+  == "titles         = #{@titles.to_json};"
+  == "prices         = #{@prices.to_json};"
+  == "availabilities = #{@availabilities.to_json};"
+  == "descriptions   = #{@product_groups.to_json};"
+  == "urls           = #{@urls.to_json};"
+  == "array_length   = #{@titles.count - 1};"
+
+#productinfo
+  a class="product" style="text-decoration:none; color:white;"
+    h1 id="title"
+  br
+  a class="product" style="text-decoration:none; color:white;"
+    h2
+      span id="availability"
+  br
+  a class="product" style="text-decoration:none; color:white;"
+    h2
+      span id="price" 
+  br
+  a class="product" style="text-decoration:none; color:white;"
+    h2
+      span id="description"
