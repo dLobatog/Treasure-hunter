@@ -9,9 +9,9 @@ before do
   @req = Vacuum.new :product_advertising
 
   @req.configure do |config|
-    config.key    = 'AKIAIUI33AZOOENUX54A'
-    config.secret = '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'
-    config.tag    = 'amazspid-20'
+    config.key    = ''
+    config.secret = ''
+    config.tag    = ''
   end
 end
 
